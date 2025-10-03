@@ -5,3 +5,6 @@ class Solution:
         for i in nums1:
             if 0 in nums1:
                 nums1.remove(0)
+            if m+n > len(nums1):
+                nums1.append(0)
+        nums1.sort()
